@@ -1,1 +1,1 @@
-Progress Bar Built on React 
+Progress Bar Built on React
