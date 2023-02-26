@@ -1,33 +1,33 @@
-@import "../styles/variables.scss";
+@import '../styles/variables.scss';
 
 .progressBar {
-  border-width: 1px;
-  border-color: $boder-color;
-  border-style: solid;
-  border-radius: 4px;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  height: 48px;
-  position: relative;
-  overflow: hidden;
-
-  .value {
-    color: #0b0000;
-    position: relative;
-    z-index: 2;
-  }
-  .bar {
-    position: absolute;
-    left: 0;
-    background-color: #00efff;
+    border-width: 1px;
+    border-color: $boder-color;
+    border-style: solid;
+    border-radius: 4px;
     display: flex;
-    height: 100%;
-    transition: width 0.2s ease-in-out;
-    z-index: 1;
-    &.fullWidth {
-      background-color: #ff0000;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    position: relative;
+    overflow: hidden;
+
+    .value {
+        color: #0b0000;
+        position: relative;
+        z-index: 2;
     }
-  }
+    .bar {
+        position: absolute;
+        left: 0;
+        background-color: #00efff;
+        display: flex;
+        height: 100%;
+        transition: width 0.2s ease-in-out;
+        z-index: 1;
+        &.fullWidth {
+            background-color: #ff0000;
+        }
+    }
 }
