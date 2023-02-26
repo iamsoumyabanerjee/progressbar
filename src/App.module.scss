@@ -1,0 +1,46 @@
+@import "./styles/global.scss";
+@import "./styles/variables.scss";
+@import "./styles/breakpoints.scss";
+
+.container {
+  .app {
+    max-width: 767px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  .bar {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 16px;
+    }
+  }
+  .controllers {
+    display: flex;
+    flex-direction: column;
+    @include viewport(small) {
+      flex-direction: row;
+    }
+    .left,
+    .right {
+      display: flex;
+    }
+    .left {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+  }
+  .selectBox {
+    width: 100%;
+  }
+  .buttonContainer {
+    padding-left: 20px;
+    &:first-child {
+      padding-left: 0;
+    }
+    @include viewport(small) {
+      &:first-child {
+        padding-left: 20px;
+      }
+    }
+  }
+}

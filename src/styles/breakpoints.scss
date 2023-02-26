@@ -1,0 +1,16 @@
+$breakpoints: (
+  "small": 480px,
+  "medium": 768px,
+  "large": 992px,
+  "xlarge": 1200px,
+) !default;
+
+@mixin viewport($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn 'Unfortunately this value is not available';
+  }
+}
